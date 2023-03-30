@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Simulateur BAC",
+  "version": "0.0.1",
+  "description": "A tool that lets frenh highschool student see how many points they already have for their final exam.",
+  "icons" : {
+      "128" : "icons/icon128.png"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

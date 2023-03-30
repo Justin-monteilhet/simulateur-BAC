@@ -66,31 +66,6 @@
         gradesCoeffSum += coeff;
         gradesWeightedSum += grade * coeff;
     }
-
-    // gradeTable.querySelectorAll("input").forEach((el) => {
-    //     code = el.id.split("_").slice(-1)[0];
-    //     subject = subjectsCodes[code];
-
-    //     if (subject in coefficients) {
-    //         coeff = coefficients[subject];
-    //         total_coeff += coeff;
-    //     } else if (spes.has(subject)) {
-    //         coeff = coefficients['spe_2'];
-    //         total_coeff += coeff;
-    //     } else if (options_2.has(subject)) {
-    //         coeff = coefficients['opt_2'];
-    //         total_coeff += coeff;
-    //     } else {
-    //         return;
-    //     }
-
-    //     grade = parseFloat(el.value);
-    //     if (isNaN(grade)) {
-    //         return;
-    //     }
-
-    //     gradesCoeffSum += coeff;
-    //     gradesWeightedSum += coeff * grade;
-    // })
+    
     return [gradesWeightedSum, gradesCoeffSum, total_coeff];
 })()
