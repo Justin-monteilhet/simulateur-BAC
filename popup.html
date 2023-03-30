@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="" fr>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulateur BAC</title>
+    <link href="popup.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="grade">
+            <div class="text grade-label">Moyenne temporaire</div>
+            <div class="grade-circle">
+                <div class="grade-value">17/20</div>
+            </div>
+        </div>
+        <div class="slider-container">
+            <div class="slider-label">Points</div>
+            <h3 class="points text">51/102</h3>
+            <input type="range" class="slider" min="0" max="100" value="75" readonly>
+            <output class="output text"></output>
+        </div>
+        <div class="comment">
+            <span id="mention" class="text">Vous avez déjà votre BAC !</span>
+        </div>
+        <footer>
+            <a class="text url" href="https://github.com/Justin-monteilhet">github.com</a>
+        </footer>
+    </div>
+
+
+    <div id="badPage">
+        <h2 class="text">Veuillez ouvrir l'extension sur la <a
+                href="https://dossier.parcoursup.fr/Candidat/scolarite.baccalaureat">rubrique Baccaulauréat</a> de
+            Parcoursup.</h2>
+    </div>
+</body>
+
+<script src="popup.js"></script>
+
+</html>
