@@ -18,7 +18,7 @@ chrome.tabs.query({ active: true }, (tabs) => {
         let [gradesWeightedSum, gradesCoeffSum, total_coeff] = response[0].result;
 
         let average = gradesWeightedSum / gradesCoeffSum;
-        let total_points = average * total_coeff / gradesCoeffSum;
+        let total_points = (average / 20) * (gradesCoeffSum);
         let percentage = (total_points / total_coeff) * 100;
         console.log(gradesWeightedSum, gradesCoeffSum, total_coeff);
 
